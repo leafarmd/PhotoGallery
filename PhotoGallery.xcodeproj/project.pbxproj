@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		EE04877126B8B0920044AC11 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE04877026B8B0920044AC11 /* Localizable.strings */; };
 		EE04877326B8B0A20044AC11 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE04877226B8B0A20044AC11 /* StringExtensions.swift */; };
+		EE04877726BAB9BD0044AC11 /* PGImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE04877626BAB9BD0044AC11 /* PGImageSearchViewController.swift */; };
+		EE04877B26BABA7C0044AC11 /* PGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE04877A26BABA7C0044AC11 /* PGButton.swift */; };
+		EE04877D26BABCF10044AC11 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE04877C26BABCF10044AC11 /* UIColorExtensions.swift */; };
+		EE04878026BABD290044AC11 /* PGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE04877F26BABD290044AC11 /* PGColor.swift */; };
 		EE33693A26B3082F0001AEA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33693926B3082F0001AEA9 /* AppDelegate.swift */; };
 		EE33693C26B3082F0001AEA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33693B26B3082F0001AEA9 /* SceneDelegate.swift */; };
 		EE33693E26B3082F0001AEA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33693D26B3082F0001AEA9 /* ViewController.swift */; };
@@ -20,6 +24,12 @@
 		EE33696E26B317DD0001AEA9 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33696D26B317DD0001AEA9 /* APIEndpoint.swift */; };
 		EE33697026B318660001AEA9 /* APICore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33696F26B318660001AEA9 /* APICore.swift */; };
 		EE33697226B319F10001AEA9 /* ModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33697126B319F10001AEA9 /* ModelOutput.swift */; };
+		EE41618526BAFAB30010110A /* PGImageSearchProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41618426BAFAB30010110A /* PGImageSearchProtocols.swift */; };
+		EE41618726BAFB630010110A /* PGImageSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41618626BAFB630010110A /* PGImageSearchPresenter.swift */; };
+		EE41618926BAFDB20010110A /* PGImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41618826BAFDB20010110A /* PGImageName.swift */; };
+		EE41618B26BAFF4E0010110A /* PGImageSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41618A26BAFF4E0010110A /* PGImageSearchRouter.swift */; };
+		EE41618E26BB13260010110A /* PGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41618D26BB13260010110A /* PGTextField.swift */; };
+		EE41619026BB15860010110A /* PGConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41618F26BB15860010110A /* PGConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +52,10 @@
 /* Begin PBXFileReference section */
 		EE04877026B8B0920044AC11 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		EE04877226B8B0A20044AC11 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		EE04877626BAB9BD0044AC11 /* PGImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageSearchViewController.swift; sourceTree = "<group>"; };
+		EE04877A26BABA7C0044AC11 /* PGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGButton.swift; sourceTree = "<group>"; };
+		EE04877C26BABCF10044AC11 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		EE04877F26BABD290044AC11 /* PGColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGColor.swift; sourceTree = "<group>"; };
 		EE33693626B3082F0001AEA9 /* PhotoGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE33693926B3082F0001AEA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE33693B26B3082F0001AEA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +73,12 @@
 		EE33696D26B317DD0001AEA9 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		EE33696F26B318660001AEA9 /* APICore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICore.swift; sourceTree = "<group>"; };
 		EE33697126B319F10001AEA9 /* ModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOutput.swift; sourceTree = "<group>"; };
+		EE41618426BAFAB30010110A /* PGImageSearchProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageSearchProtocols.swift; sourceTree = "<group>"; };
+		EE41618626BAFB630010110A /* PGImageSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageSearchPresenter.swift; sourceTree = "<group>"; };
+		EE41618826BAFDB20010110A /* PGImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageName.swift; sourceTree = "<group>"; };
+		EE41618A26BAFF4E0010110A /* PGImageSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageSearchRouter.swift; sourceTree = "<group>"; };
+		EE41618D26BB13260010110A /* PGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGTextField.swift; sourceTree = "<group>"; };
+		EE41618F26BB15860010110A /* PGConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +118,56 @@
 			isa = PBXGroup;
 			children = (
 				EE04877226B8B0A20044AC11 /* StringExtensions.swift */,
+				EE04877C26BABCF10044AC11 /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE04877426BAB9110044AC11 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EE04877526BAB91C0044AC11 /* Image Search */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EE04877526BAB91C0044AC11 /* Image Search */ = {
+			isa = PBXGroup;
+			children = (
+				EE04877626BAB9BD0044AC11 /* PGImageSearchViewController.swift */,
+				EE41618426BAFAB30010110A /* PGImageSearchProtocols.swift */,
+				EE41618626BAFB630010110A /* PGImageSearchPresenter.swift */,
+				EE41618A26BAFF4E0010110A /* PGImageSearchRouter.swift */,
+			);
+			path = "Image Search";
+			sourceTree = "<group>";
+		};
+		EE04877826BABA590044AC11 /* Design System */ = {
+			isa = PBXGroup;
+			children = (
+				EE41618C26BB13120010110A /* Text Field */,
+				EE04877E26BABD110044AC11 /* Tokens */,
+				EE04877926BABA610044AC11 /* Button */,
+			);
+			path = "Design System";
+			sourceTree = "<group>";
+		};
+		EE04877926BABA610044AC11 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				EE04877A26BABA7C0044AC11 /* PGButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		EE04877E26BABD110044AC11 /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				EE04877F26BABD290044AC11 /* PGColor.swift */,
+				EE41618826BAFDB20010110A /* PGImageName.swift */,
+				EE41618F26BB15860010110A /* PGConstants.swift */,
+			);
+			path = Tokens;
 			sourceTree = "<group>";
 		};
 		EE33692D26B3082E0001AEA9 = {
@@ -125,6 +193,8 @@
 		EE33693826B3082F0001AEA9 /* PhotoGallery */ = {
 			isa = PBXGroup;
 			children = (
+				EE04877826BABA590044AC11 /* Design System */,
+				EE04877426BAB9110044AC11 /* Features */,
 				EE04876F26B8B07C0044AC11 /* Extensions */,
 				EE04876E26B8B0670044AC11 /* Resources */,
 				EE33696A26B317890001AEA9 /* API */,
@@ -165,6 +235,14 @@
 				EE33697126B319F10001AEA9 /* ModelOutput.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		EE41618C26BB13120010110A /* Text Field */ = {
+			isa = PBXGroup;
+			children = (
+				EE41618D26BB13260010110A /* PGTextField.swift */,
+			);
+			path = "Text Field";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,13 +376,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE04877326B8B0A20044AC11 /* StringExtensions.swift in Sources */,
+				EE41618E26BB13260010110A /* PGTextField.swift in Sources */,
+				EE04877726BAB9BD0044AC11 /* PGImageSearchViewController.swift in Sources */,
 				EE33693E26B3082F0001AEA9 /* ViewController.swift in Sources */,
+				EE41618726BAFB630010110A /* PGImageSearchPresenter.swift in Sources */,
 				EE33697026B318660001AEA9 /* APICore.swift in Sources */,
+				EE41618B26BAFF4E0010110A /* PGImageSearchRouter.swift in Sources */,
 				EE33693A26B3082F0001AEA9 /* AppDelegate.swift in Sources */,
 				EE33697226B319F10001AEA9 /* ModelOutput.swift in Sources */,
+				EE04877D26BABCF10044AC11 /* UIColorExtensions.swift in Sources */,
+				EE41619026BB15860010110A /* PGConstants.swift in Sources */,
 				EE33693C26B3082F0001AEA9 /* SceneDelegate.swift in Sources */,
 				EE33696C26B3179A0001AEA9 /* APIrotocols.swift in Sources */,
+				EE04877B26BABA7C0044AC11 /* PGButton.swift in Sources */,
+				EE04878026BABD290044AC11 /* PGColor.swift in Sources */,
+				EE41618526BAFAB30010110A /* PGImageSearchProtocols.swift in Sources */,
 				EE33696E26B317DD0001AEA9 /* APIEndpoint.swift in Sources */,
+				EE41618926BAFDB20010110A /* PGImageName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

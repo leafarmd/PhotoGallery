@@ -6,4 +6,6 @@
   
 */
 
-"teste.teste" = "teste";
+"image.search.title" = "Flickr Photo Search";
+"image.search.placeholder" = "Search photos";
+"image.search.action" = "Search";
