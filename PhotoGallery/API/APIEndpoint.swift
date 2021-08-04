@@ -14,8 +14,9 @@ enum APIEndpoint {
 
 extension APIEndpoint {
     
-    var baseUrl: String { "https://api.flickr.com/services/rest/" }
-    var baseImgUrl: String { "https://farm6.staticflickr.com/5800/" }
+    private var baseUrl: String { "https://api.flickr.com/services/rest/" }
+    private var baseImgUrl: String { "https://farm6.staticflickr.com/5800/" }
+    
     var url: String {
         switch self {
         case .photos: return baseUrl

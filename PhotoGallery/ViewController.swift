@@ -22,6 +22,24 @@ class ViewController: UIViewController {
                 print(failure.message)
             }
         }
+        
+        let imageView = UIImageView()
+        view.addSubview(imageView)
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+        api.loadImage(from: .image(id: "51354140302_3d864e6e33")) {
+            result in
+            switch result {
+            case .success(let image):
+                print(image.description)
+                imageView.image = image
+            case .failure(let failure): print(failure.message)
+            }
+        }
     }
 }
 

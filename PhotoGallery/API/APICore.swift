@@ -88,9 +88,9 @@ final class APICore: APIProtocols {
         }.resume()
     }
     
-    static func loadImage(from url: String, completion: @escaping RequestImageResult) {
+    func loadImage(from endpoint: APIEndpoint, completion: @escaping RequestImageResult) {
         
-        guard let url = URL(string: url) else {
+        guard let url = URL(string: endpoint.url) else {
             completion(.failure(.invalidData))
             return
         }
