@@ -5,15 +5,13 @@ jobs:
   build:
 
     runs-on: macOS-latest
-    
+
     steps:
-    - uses: actions/checkout@master
-    - name: Start xcodebuild build
-      run: |
-        ls
-        xcodebuild \
-            -scheme PhotoGallery \
-            -sdk iphonesimulator \
-            -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.3' \
-            test
+    - uses: actions/checkout@v1
+    - name: Force Xcode 11
+      run: sudo xcode-select -switch /Applications/Xcode_11.3.app
+    - name: Run tests
+      run: xcodebuild clean test -project "PhotoGallery.xcodeproj" -scheme "PhotoGallery" -destination "platform=iOS Simulator,name=iPhone 11 Pro Max,OS=latest"
+    - name: Build App
+      run: xcodebuild -project "PhotoGallery.xcodeproj" -scheme "PhotoGallery" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
           
