@@ -21,7 +21,6 @@
 		EE33696E26B317DD0001AEA9 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33696D26B317DD0001AEA9 /* APIEndpoint.swift */; };
 		EE33697026B318660001AEA9 /* APICore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33696F26B318660001AEA9 /* APICore.swift */; };
 		EE33697226B319F10001AEA9 /* ModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33697126B319F10001AEA9 /* ModelOutput.swift */; };
-		EE41618926BAFDB20010110A /* PGImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41618826BAFDB20010110A /* PGImageName.swift */; };
 		EE41618E26BB13260010110A /* PGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41618D26BB13260010110A /* PGTextField.swift */; };
 		EE41619026BB15860010110A /* PGConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41618F26BB15860010110A /* PGConstants.swift */; };
 		EE41619326BB50C50010110A /* PGImageGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41619226BB50C50010110A /* PGImageGalleryViewController.swift */; };
@@ -34,6 +33,7 @@
 		EE4161AB26BC0F8B0010110A /* PGImageGalleryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4161AA26BC0F8B0010110A /* PGImageGalleryRouter.swift */; };
 		EE88A9DE26BC3ED700A89297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE88A9DD26BC3ED700A89297 /* Assets.xcassets */; };
 		EE88A9E026BC6E3200A89297 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EE88A9DF26BC6E3200A89297 /* README.md */; };
+		EE88A9E226BC7C1100A89297 /* github-actions-demo.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE88A9E126BC7C1100A89297 /* github-actions-demo.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +74,6 @@
 		EE33696D26B317DD0001AEA9 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		EE33696F26B318660001AEA9 /* APICore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICore.swift; sourceTree = "<group>"; };
 		EE33697126B319F10001AEA9 /* ModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOutput.swift; sourceTree = "<group>"; };
-		EE41618826BAFDB20010110A /* PGImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageName.swift; sourceTree = "<group>"; };
 		EE41618D26BB13260010110A /* PGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGTextField.swift; sourceTree = "<group>"; };
 		EE41618F26BB15860010110A /* PGConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGConstants.swift; sourceTree = "<group>"; };
 		EE41619226BB50C50010110A /* PGImageGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageGalleryViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +86,7 @@
 		EE4161AA26BC0F8B0010110A /* PGImageGalleryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageGalleryRouter.swift; sourceTree = "<group>"; };
 		EE88A9DD26BC3ED700A89297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE88A9DF26BC6E3200A89297 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EE88A9E126BC7C1100A89297 /* github-actions-demo.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = "github-actions-demo.yml"; path = ".github/workflows/github-actions-demo.yml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				EE04877F26BABD290044AC11 /* PGColor.swift */,
-				EE41618826BAFDB20010110A /* PGImageName.swift */,
 				EE41618F26BB15860010110A /* PGConstants.swift */,
 			);
 			path = Tokens;
@@ -173,6 +172,7 @@
 		EE33692D26B3082E0001AEA9 = {
 			isa = PBXGroup;
 			children = (
+				EE88A9E126BC7C1100A89297 /* github-actions-demo.yml */,
 				EE88A9DF26BC6E3200A89297 /* README.md */,
 				EE33693826B3082F0001AEA9 /* PhotoGallery */,
 				EE33694F26B308310001AEA9 /* PhotoGalleryTests */,
@@ -383,6 +383,7 @@
 				EE04877126B8B0920044AC11 /* Localizable.strings in Resources */,
 				EE88A9DE26BC3ED700A89297 /* Assets.xcassets in Resources */,
 				EE88A9E026BC6E3200A89297 /* README.md in Resources */,
+				EE88A9E226BC7C1100A89297 /* github-actions-demo.yml in Resources */,
 				EE33694626B308300001AEA9 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,7 +429,6 @@
 				EE04877B26BABA7C0044AC11 /* PGButton.swift in Sources */,
 				EE04878026BABD290044AC11 /* PGColor.swift in Sources */,
 				EE33696E26B317DD0001AEA9 /* APIEndpoint.swift in Sources */,
-				EE41618926BAFDB20010110A /* PGImageName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

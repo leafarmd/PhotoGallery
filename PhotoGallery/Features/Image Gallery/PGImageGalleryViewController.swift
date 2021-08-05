@@ -46,7 +46,6 @@ final class PGImageGalleryViewController: UIViewController {
     
     private func setupSearchField() {
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search"
         searchController.searchBar.delegate = self
         self.navigationItem.hidesSearchBarWhenScrolling = false
         self.navigationItem.searchController = searchController
@@ -110,6 +109,10 @@ extension PGImageGalleryViewController: UICollectionViewDataSource {
 }
 
 extension PGImageGalleryViewController: PGImageGalleryViewModel {
+    func setSearchBarPlaceHolder(_ text: String) {
+        searchController.searchBar.placeholder = text
+    }
+    
     func presentError(message: String, title: String, actionTitle: String) {
         let alert = UIAlertController(title:title, message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: actionTitle, style: UIAlertAction.Style.default, handler: nil))
