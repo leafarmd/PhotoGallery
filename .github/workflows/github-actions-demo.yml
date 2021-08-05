@@ -11,5 +11,5 @@ jobs:
       - name: Force xcode 11
         run: sudo xcode-select -switch /Applications/Xcode_11.3.app
       - name: iPhone 11 Test
-        run: xcodebuild test -scheme PhotoGallery -workspace PhotoGallery.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3'
+        run: xcodebuild test -scheme PhotoGallery -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3'
           
