@@ -10,7 +10,8 @@ jobs:
       - name: Build
         run: swift build
       - name: Run tests
-        run: swift test
+        run: |
+            xcodebuild
 
   test:
     name: Test
@@ -21,5 +22,5 @@ jobs:
       - name: Testing
         run: |
           ls
-          xcodebuild -scheme PhotoGallery -destination 'platform=iOS Simulator,OS=13.1,name=iPhone 8' test
+          xcodebuild -scheme PhotoGallery -destination 'platform=iOS Simulator,name=iPhone 8' test
           
