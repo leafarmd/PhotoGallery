@@ -8,8 +8,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@master
-    - name: Start xcodebuild test
+    - name: Start xcodebuild build
       run: |
-       xcrun simctl list
        xcodebuild clean -project PhotoGallery.xcodeproj -scheme PhotoGallery -sdk iphonesimulator build
           
