@@ -1,4 +1,4 @@
-# PhotoGallerery
+# PhotoGallery
 
 Sample app made with a single screen to list a set of images fetched from Flickr JSON API
 
