@@ -14,5 +14,5 @@ jobs:
       - name: Testing
         run: |
           ls
-          xcodebuild -scheme SchemeName -destination 'platform=iOS Simulator,name=iPhone 12' test
+          xcodebuild -scheme PhotoGallery -destination 'platform=iOS Simulator,name=iPhone 12' test
           
