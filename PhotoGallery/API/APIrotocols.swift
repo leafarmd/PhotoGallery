@@ -10,6 +10,7 @@ import UIKit
 
 protocol APIProtocols: AnyObject {
     func requestObject<T: Decodable>(from endpoint: APIEndpoint, data: Data?, type: T.Type, completion: @escaping CompletionCallback<T>)
+    func loadImage(from endpoint: APIEndpoint, completion: @escaping RequestImageResult)
 }
 
 enum CompletionStatus<T> {

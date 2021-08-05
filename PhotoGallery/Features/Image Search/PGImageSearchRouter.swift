@@ -19,6 +19,8 @@ final class PGImageSearchRouter: PGImageSearchRouterInterface {
     }
     
     func gotoImageGallery(_ value: String) {
-        
+        let router = PGImageGalleryRouter(tags: value)
+        router.navigator = navigator
+        router.start()
     }
 }
