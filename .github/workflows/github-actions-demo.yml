@@ -5,13 +5,10 @@ jobs:
   build:
 
     runs-on: macOS-latest
-
+    
     steps:
-    - uses: actions/checkout@v1
-    - uses: actions/checkout@v1
-    - name: Set Xcode version
-      uses: maxim-lobanov/setup-xcode@v1.1
-      with:
-        xcode-version: 12.1
-    - name: Run tests
-      run: xcodebuild clean test -project "PhotoGallery.xcodeproj" -scheme "PhotoGallery" -destination "platform=iOS Simulator,name=iPhone 11,OS=latest"
+    - uses: actions/checkout@master
+    - name: Start xcodebuild build
+      run: |
+       xcodebuild clean -project PhotoGallery.xcodeproj -scheme PhotoGallery -sdk iphonesimulator build
+          
