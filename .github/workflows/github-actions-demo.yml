@@ -2,14 +2,12 @@
 on: pull_request
 name: CI
 jobs:
-  test:
-    name: Test
+  build:
+
     runs-on: macOS-latest
+    
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-      - name: Force xcode 11
-        run: sudo xcode-select -switch /Applications/Xcode_11.3.app
-      - name: iPhone 11 Test
-        run: xcodebuild test -scheme PhotoGallery -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3'
+    - uses: actions/checkout@master
+    - name: Start xcodebuild test
+      run: xcodebuild clean test -project PhotoGallery.xcodeproj -scheme TodoSampleApp -destination 'platform=iOS Simulator,name=iPhone 11 Pro'
           
