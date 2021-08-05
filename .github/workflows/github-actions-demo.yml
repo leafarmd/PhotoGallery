@@ -1,15 +1,14 @@
-name: Swift
 
-on: [push]
-
+on: pull_request
+name: CI
 jobs:
   build:
 
-    runs-on: macos-latest
-
+    runs-on: macOS-latest
+    
     steps:
-      - uses: actions/checkout@v2
-      - name: Build
-        run: swift build
-      - name: Run tests
-        run: swift test
+    - uses: actions/checkout@master
+    - name: Start xcodebuild build
+      run: |
+       xcodebuild clean -project PhotoGallery.xcodeproj -scheme PhotoGallery -sdk iphonesimulator build
+          
