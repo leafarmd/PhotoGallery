@@ -14,6 +14,7 @@ protocol PGImageGalleryViewModel: AnyObject {
     func showLoader()
     func hideLoader()
     func clearDataSource()
+    func setSearchBarPlaceHolder(_ text: String)
 }
 
 protocol PGImageGalleryInteractorOutput: AnyObject {

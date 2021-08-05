@@ -18,7 +18,7 @@ final class PGImageGalleryPresenter {
     func setViewModel(_ viewModel: PGImageGalleryViewModel) {
         self.viewModel = viewModel
         viewModel.setTitle("image.search.title".localized())
-        
+        viewModel.setSearchBarPlaceHolder("image.search.placeholder".localized())
         interactor.output = self
     }
     
