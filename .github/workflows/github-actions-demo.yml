@@ -9,5 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Start xcodebuild test
-      run: xcodebuild clean test -project PhotoGallery.xcodeproj -scheme PhotoGallery -destination 'platform=iOS Simulator,name=iPhone 11 Pro'
+      run: |
+       xcrun simctl list
+       xcodebuild clean test -project PhotoGallery.xcodeproj -scheme PhotoGallery -destination 'platform=iOS Simulator,name=iPhone 11 Pro'
           
