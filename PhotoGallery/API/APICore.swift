@@ -108,3 +108,42 @@ final class APICore: APIProtocols {
         }).resume()
     }
 }
+
+final class APIStub: APIProtocols {
+    
+    let status: CompletionStatus<Decodable>
+    var url: String?
+    var method: HttpMethod?
+    var params: [String: String]?
+    
+    init(status: CompletionStatus<Decodable>) {
+        self.status = status
+    }
+    
+    func requestObject<T>(from endpoint: APIEndpoint, data: Data?, type: T.Type, completion: @escaping CompletionCallback<T>) where T : Decodable {
+        
+        url = endpoint.url
+        method = endpoint.method
+        params = endpoint.params
+        
+        switch status {
+                case .success(let result):
+                    completion(.success(result as! T))
+                case .failure(let failure):
+                    completion(.failure(failure))
+                }
+    }
+    
+    func loadImage(from endpoint: APIEndpoint, completion: @escaping RequestImageResult) {
+        url = endpoint.url
+        
+        switch status {
+                case .success:
+                    completion(.success(UIImage(named: "")!))
+                case .failure(let failure):
+                    completion(.failure(failure))
+                }
+    }
+    
+    
+}
