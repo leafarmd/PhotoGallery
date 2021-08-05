@@ -1,0 +1,14 @@
+
+on: pull_request
+name: CI
+jobs:
+  build:
+
+    runs-on: macOS-latest
+    
+    steps:
+    - uses: actions/checkout@master
+    - name: Start xcodebuild build
+      run: |
+       xcodebuild clean -project PhotoGallery.xcodeproj -scheme PhotoGallery -sdk iphonesimulator build
+          

@@ -1,0 +1,15 @@
+/* 
+  Localized.strings
+  PhotoGallery
+
+  Created by Rafael Mendes Damasceno on 02/08/21.
+  
+*/
+
+"image.search.title" = "Flickr Photo Search";
+"image.search.placeholder" = "Search photos";
+"image.search.action" = "Search";
+
+"image.gallery.error.title" = "";
+"image.gallery.error.message" = "Error searching for image, try again later";
+"image.gallery.error.action" = "OK";
