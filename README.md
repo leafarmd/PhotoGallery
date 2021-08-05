@@ -1,3 +1,3 @@
 # PhotoGallerery
 
-A description of this package.
+Sample application with 

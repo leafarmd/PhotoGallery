@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         window?.rootViewController = navigator
-        let router = PGImageSearchRouter()
+        let router = PGImageGalleryRouter()
         router.navigator = navigator
         router.start()
         window?.makeKeyAndVisible()

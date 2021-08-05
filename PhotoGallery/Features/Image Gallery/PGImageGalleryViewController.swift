@@ -13,6 +13,7 @@ final class PGImageGalleryViewController: UIViewController {
     private var datasource: [String] = []
     private var collectionView: UICollectionView?
     private let presenter: PGImageGalleryPresenter
+    let searchController = UISearchController(searchResultsController: nil)
     
     init(presenter: PGImageGalleryPresenter) {
         self.presenter = presenter
@@ -40,6 +41,16 @@ final class PGImageGalleryViewController: UIViewController {
         
         setupCollectionView()
         presenter.setViewModel(self)
+        setupSearchField()
+    }
+    
+    private func setupSearchField() {
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search"
+        searchController.searchBar.delegate = self
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+        self.navigationItem.searchController = searchController
+        self.definesPresentationContext = true
     }
     
     private func setupCollectionView() {
@@ -116,9 +127,22 @@ extension PGImageGalleryViewController: PGImageGalleryViewModel {
     
     func showLoader() {
         PGLoader.shared.showSpinner()
+        searchController.searchBar.searchTextField.isUserInteractionEnabled = false
     }
     func hideLoader() {
+        searchController.searchBar.searchTextField.isUserInteractionEnabled = true
         PGLoader.shared.removeSpinner()
     }
     
+    func clearDataSource() {
+        datasource.removeAll()
+    }
+    
+}
+
+extension PGImageGalleryViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchBar.searchTextField.text else { return }
+        presenter.searchForTag(tags: text)
+    }
 }
