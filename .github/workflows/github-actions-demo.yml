@@ -2,15 +2,18 @@
 on: pull_request
 name: CI
 jobs:
-  test:
+  build:
 
-  runs-on: macOS-latest
+    runs-on: macOS-latest
 
-steps:
-- uses: actions/checkout@v2
-- name: Force Xcode 11
-  run: sudo xcode-select -switch /Applications/Xcode_11.3.app
-- name: List Simulators
-  run: xcrun instruments -s
-- name: Run tests
-  run: xcodebuild clean test -workspace 'PhotoGallery.xcworkspace' -scheme 'PhotoGallery' -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=latest'
+    steps:
+    - uses: actions/checkout@v1
+    - name: Force Xcode 11
+      run: sudo xcode-select -switch /Applications/Xcode_11.3.app
+    - name: List Simulators
+      run: xcrun instruments -s
+    - name: Run tests
+      run: xcodebuild clean test -project "PhotoGallery.xcodeproj" -scheme "PhotoGallery" -destination "platform=iOS Simulator,name=iPhone X,OS=latest"
+    - name: Build App
+      run: xcodebuild -project "PhotoGallery.xcodeproj" -scheme "PhotoGallery" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+          
