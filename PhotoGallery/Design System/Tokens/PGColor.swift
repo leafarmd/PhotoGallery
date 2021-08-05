@@ -17,7 +17,7 @@ public struct PGColor: Equatable {
     }
 
     public static var white64: PGColor = PGColor(uiColor: UIColor(red: 255, green: 255, blue: 255, alpha: 0.64))
-    public static var dark80: PGColor = PGColor(uiColor: UIColor(red: 50, green: 50, blue: 50, alpha: 1))
+    public static var dark50: PGColor = PGColor(uiColor: UIColor(red: 50, green: 50, blue: 50, alpha: 0.5))
     public static var primary: PGColor = PGColor(uiColor: UIColor(red: 204, green: 32, blue: 37, alpha: 1))
     
     public static func == (lhs: PGColor, rhs: UIColor) -> Bool {

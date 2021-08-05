@@ -94,23 +94,17 @@ final class APICore: APIProtocols {
             completion(.failure(.invalidData))
             return
         }
-        
-        do {
-            let data = try Data(contentsOf: url)
-            guard let image = UIImage(data: data) else {
-                DispatchQueue.main.async {
-                    completion(.failure(.invalidData))
-                }
+        URLSession.shared.dataTask(with: url, completionHandler: { data, response, error -> Void in
+            guard let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+                let data = data, error == nil,
+                let image = UIImage(data: data)
+            else {
+                completion(.failure(.invalidData))
                 return
             }
-            
             DispatchQueue.main.async {
                 completion(.success(image))
             }
-        } catch {
-            DispatchQueue.main.async {
-                completion(.failure(.invalidData))
-            }
-        }
+        }).resume()
     }
 }
