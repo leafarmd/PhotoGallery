@@ -10,8 +10,8 @@ jobs:
     - uses: actions/checkout@master
     - name: Start xcodebuild build
       run: |
-        xcodebuild PhotGallery.xcodeproj \
-            -scheme PhotGallery \
+        xcodebuild PhotoGallery.xcodeproj \
+            -scheme PhotoGallery \
             -sdk iphonesimulator \
             -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.3' \
             test
