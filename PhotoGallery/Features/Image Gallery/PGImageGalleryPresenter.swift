@@ -9,23 +9,17 @@ final class PGImageGalleryPresenter {
     
     private weak var viewModel: PGImageGalleryViewModel?
     private let interactor = PGImageGalleryInteractor()
-    private let tags: String
+    private var tags: String = ""
     private var page = 1
     private var pages = 0
     private var total = 0
     private var isLoading = false
     
-    init(tags: String) {
-        self.tags = tags
-    }
-    
     func setViewModel(_ viewModel: PGImageGalleryViewModel) {
         self.viewModel = viewModel
-        viewModel.setTitle(tags)
-        viewModel.showLoader()
-        
+        viewModel.setTitle("image.search.title".localized())
+        viewModel.setSearchBarPlaceHolder("image.search.placeholder".localized())
         interactor.output = self
-        interactor.fetchData(page: page, tags: tags)
     }
     
     func currentIndex(_ index: Int) {
@@ -35,6 +29,16 @@ final class PGImageGalleryPresenter {
             interactor.fetchData(page: page, tags: tags)
             isLoading = true
         }
+    }
+    
+    func searchForTag(tags: String) {
+        page = 1
+        total = 0
+        pages = 0
+        self.tags = tags
+        viewModel?.showLoader()
+        viewModel?.clearDataSource()
+        interactor.fetchData(page: page, tags: tags)
     }
 }
 
