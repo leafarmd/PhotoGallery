@@ -8,8 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build
-        run: swift build
-      - name: Run tests
         run: |
             xcodebuild
 
@@ -19,8 +17,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-      - name: Testing
-        run: |
-          ls
-          xcodebuild -scheme PhotoGallery -destination 'platform=iOS Simulator,name=iPhone 8' test
+      - name: Force xcode 11
+        run: sudo xcode-select -switch /Applications/Xcode_11.3.app
+      - name: iPhone 11 Test
+        run: xcodebuild test -scheme affirm-me-test -workspace affirm-me.xcworkspace -destination ‘platform=iOS Simulator,name=iPhone 11,OS=13.3’
           
