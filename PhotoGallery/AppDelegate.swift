@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private let navigator = UINavigationController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
         makeViewController()
         return true
     }
@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.rootViewController = navigator
         window?.makeKeyAndVisible()
-        let router = PGImageSearchRouter()
+        let router = PGImageGalleryRouter()
         router.navigator = navigator
         router.start()
     }

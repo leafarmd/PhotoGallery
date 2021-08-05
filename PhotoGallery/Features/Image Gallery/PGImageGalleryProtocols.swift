@@ -13,6 +13,7 @@ protocol PGImageGalleryViewModel: AnyObject {
     func presentError(message: String, title: String, actionTitle: String)
     func showLoader()
     func hideLoader()
+    func clearDataSource()
 }
 
 protocol PGImageGalleryInteractorOutput: AnyObject {
