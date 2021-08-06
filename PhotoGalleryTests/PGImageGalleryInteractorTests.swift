@@ -117,14 +117,47 @@ extension PhotosOutput {
         return PhotosOutput(
             photos: Photos(
                 page: 1,
-                pages: 1,
-                perpage: 10,
-                total: 10,
+                pages: 2,
+                perpage: 4,
+                total: 8,
                 photo: [
                     Photo(
                         id: "id value",
                         owner: "owner value",
-                        secret: "secrete value",
+                        secret: "secret value",
+                        server: "server value",
+                        farm: 0,
+                        title: "title",
+                        ispublic: 0,
+                        isfriend: 0,
+                        isfamily: 0
+                    ),
+                    Photo(
+                        id: "id value",
+                        owner: "owner value",
+                        secret: "secret value",
+                        server: "server value",
+                        farm: 0,
+                        title: "title",
+                        ispublic: 0,
+                        isfriend: 0,
+                        isfamily: 0
+                    ),
+                    Photo(
+                        id: "id value",
+                        owner: "owner value",
+                        secret: "secret value",
+                        server: "server value",
+                        farm: 0,
+                        title: "title",
+                        ispublic: 0,
+                        isfriend: 0,
+                        isfamily: 0
+                    ),
+                    Photo(
+                        id: "id value",
+                        owner: "owner value",
+                        secret: "secret value",
                         server: "server value",
                         farm: 0,
                         title: "title",

@@ -23,7 +23,7 @@ protocol PGImageGalleryInteractorOutput: AnyObject {
 }
 
 protocol PGImageGalleryInteractorInput: AnyObject {
-    var output: PGImageGalleryInteractorOutput? { get }
+    var output: PGImageGalleryInteractorOutput? { get set }
     func fetchData(page: Int, tags: String)
 }
 
