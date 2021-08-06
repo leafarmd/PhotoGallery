@@ -11,4 +11,4 @@ jobs:
     - uses: actions/checkout@master
     - name: Start xcodebuild test
       run: |
-       xcodebuild clean test -project "PhotoGallery.xcodeproj" -scheme "PhotoGallery" -destination "platform=iOS Simulator,name=iPhone 11,OS=13"
+       xcodebuild clean test -project "PhotoGallery.xcodeproj" -scheme "PhotoGallery" -destination "platform=iOS Simulator,name=iPhone 12,OS=14.4"
