@@ -2,7 +2,7 @@
 on: pull_request
 name: CI
 jobs:
-  build:
+  test:
 
     runs-on: macOS-latest
     
@@ -10,5 +10,5 @@ jobs:
     - uses: actions/checkout@master
     - name: Start xcodebuild build
       run: |
-       xcodebuild clean test -project "PhotoGallery.xcodeproj" -scheme "PhotoGallery" -destination "platform=iOS Simulator,name=iPhone 11,OS=latest"
+       xcodebuild clean build test -project "PhotoGallery.xcodeproj" -scheme "PhotoGallery" -destination "platform=iOS Simulator,name=iPhone 11,OS=latest"
           
