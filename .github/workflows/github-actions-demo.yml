@@ -3,7 +3,7 @@ on: pull_request
 name: CI
 jobs:
   
-  build & test:
+  build_test:
 
     runs-on: macOS-latest
     
