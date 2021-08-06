@@ -2,6 +2,7 @@
 on: pull_request
 name: CI
 jobs:
+  
   build:
 
     runs-on: macOS-latest
@@ -13,8 +14,6 @@ jobs:
        xcodebuild clean -project PhotoGallery.xcodeproj -scheme PhotoGallery -sdk iphonesimulator build
           
     test:
-
-    runs-on: macOS-latest
     
     steps:
     - uses: actions/checkout@master
