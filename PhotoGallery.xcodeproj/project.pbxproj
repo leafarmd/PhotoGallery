@@ -34,6 +34,7 @@
 		EE88A9DE26BC3ED700A89297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE88A9DD26BC3ED700A89297 /* Assets.xcassets */; };
 		EE88A9E026BC6E3200A89297 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EE88A9DF26BC6E3200A89297 /* README.md */; };
 		EE88A9E226BC7C1100A89297 /* github-actions-demo.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE88A9E126BC7C1100A89297 /* github-actions-demo.yml */; };
+		EEFAB82926BD4A21007DFFD9 /* PGImageGalleryPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFAB82826BD4A21007DFFD9 /* PGImageGalleryPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		EE88A9DD26BC3ED700A89297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE88A9DF26BC6E3200A89297 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EE88A9E126BC7C1100A89297 /* github-actions-demo.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = "github-actions-demo.yml"; path = ".github/workflows/github-actions-demo.yml"; sourceTree = "<group>"; };
+		EEFAB82826BD4A21007DFFD9 /* PGImageGalleryPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageGalleryPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			children = (
 				EE33695026B308310001AEA9 /* PGImageGalleryInteractorTests.swift */,
 				EE33695226B308310001AEA9 /* Info.plist */,
+				EEFAB82826BD4A21007DFFD9 /* PGImageGalleryPresenterTests.swift */,
 			);
 			path = PhotoGalleryTests;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEFAB82926BD4A21007DFFD9 /* PGImageGalleryPresenterTests.swift in Sources */,
 				EE33695126B308310001AEA9 /* PGImageGalleryInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
