@@ -13,10 +13,6 @@ jobs:
       run: |
        xcodebuild clean -project PhotoGallery.xcodeproj -scheme PhotoGallery -sdk iphonesimulator build
           
-    test:
-    
-    steps:
-    - uses: actions/checkout@master
     - name: Start xcodebuild test
       run: |
        xcodebuild clean build test -project "PhotoGallery.xcodeproj" -scheme "PhotoGallery" -destination "platform=iOS Simulator,name=iPhone 11,OS=latest"
