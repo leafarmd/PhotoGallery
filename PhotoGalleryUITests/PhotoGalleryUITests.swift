@@ -7,4 +7,9 @@
 
 import XCTest
 
-class PhotoGalleryUITests: XCTestCase { }
+class PhotoGalleryUITests: XCTestCase {
+    
+    func testExample() throws {
+        XCTAssert(true == true)
+    }
+}

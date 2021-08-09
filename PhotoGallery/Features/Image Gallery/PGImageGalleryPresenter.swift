@@ -8,12 +8,16 @@
 final class PGImageGalleryPresenter {
     
     private weak var viewModel: PGImageGalleryViewModel?
-    private let interactor = PGImageGalleryInteractor()
+    private let interactor: PGImageGalleryInteractorInput
     private var tags: String = ""
     private var page = 1
     private var pages = 0
     private var total = 0
     private var isLoading = false
+    
+    init(interactor: PGImageGalleryInteractorInput = PGImageGalleryInteractor()) {
+        self.interactor = interactor
+    }
     
     func setViewModel(_ viewModel: PGImageGalleryViewModel) {
         self.viewModel = viewModel
