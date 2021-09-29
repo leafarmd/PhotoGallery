@@ -5,6 +5,9 @@
 //  Created by Rafael Mendes Damasceno on 04/08/21.
 //
 
+import PGCore
+import PGExtensions
+
 final class PGImageGalleryPresenter {
     
     private weak var viewModel: PGImageGalleryViewModel?

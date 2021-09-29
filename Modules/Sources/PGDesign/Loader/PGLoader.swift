@@ -7,16 +7,16 @@
 
 import UIKit
 
-protocol PGLoaderProtocol: AnyObject {
+public protocol PGLoaderProtocol: AnyObject {
     func showSpinner()
     func removeSpinner()
 }
 
-final class PGLoader: PGLoaderProtocol {
+public final class PGLoader: PGLoaderProtocol {
     public static let shared = PGLoader()
     var spinnerView: UIView?
 
-    func showSpinner() {
+    public func showSpinner() {
         DispatchQueue.main.async {
             guard let view = UIApplication.shared.windows.first!.rootViewController!.view else { return }
             let spinnerView = UIView.init(frame: view.bounds)
@@ -35,7 +35,7 @@ final class PGLoader: PGLoaderProtocol {
         }
     }
     
-    func removeSpinner() {
+    public func removeSpinner() {
         DispatchQueue.main.async {
             self.spinnerView?.removeFromSuperview()
             self.spinnerView = nil

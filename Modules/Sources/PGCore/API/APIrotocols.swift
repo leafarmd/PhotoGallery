@@ -8,23 +8,23 @@
 import Foundation
 import UIKit
 
-protocol APIProtocols: AnyObject {
+public protocol APIProtocols: AnyObject {
     func requestObject<T: Decodable>(from endpoint: APIEndpoint, data: Data?, type: T.Type, completion: @escaping CompletionCallback<T>)
     func loadImage(from endpoint: APIEndpoint, completion: @escaping RequestImageResult)
 }
 
-enum CompletionStatus<T> {
+public enum CompletionStatus<T> {
     case success(T)
     case failure(RequestError)
 }
 
-enum RequestError: Error {
+public enum RequestError: Error {
     case malformedURL
     case requestFailed
     case invalidData
     case decodingFailed
     
-    var message: String {
+    public var message: String {
         switch self {
         case .malformedURL:
             return "error with URL requested"
@@ -38,11 +38,11 @@ enum RequestError: Error {
     }
 }
 
-enum HttpMethod: String {
+public enum HttpMethod: String {
     case POST
     case GET
 }
 
-typealias RequestResult<T> = Result<T, RequestError>
-typealias RequestImageResult = (Result<UIImage, RequestError>) -> Void
-typealias CompletionCallback<T: Decodable> = (CompletionStatus<T>) -> Void
+public typealias RequestResult<T> = Result<T, RequestError>
+public typealias RequestImageResult = (Result<UIImage, RequestError>) -> Void
+public typealias CompletionCallback<T: Decodable> = (CompletionStatus<T>) -> Void

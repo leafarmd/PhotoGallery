@@ -3,34 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		EE04877126B8B0920044AC11 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE04877026B8B0920044AC11 /* Localizable.strings */; };
-		EE04877326B8B0A20044AC11 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE04877226B8B0A20044AC11 /* StringExtensions.swift */; };
-		EE04877B26BABA7C0044AC11 /* PGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE04877A26BABA7C0044AC11 /* PGButton.swift */; };
-		EE04877D26BABCF10044AC11 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE04877C26BABCF10044AC11 /* UIColorExtensions.swift */; };
-		EE04878026BABD290044AC11 /* PGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE04877F26BABD290044AC11 /* PGColor.swift */; };
 		EE33693A26B3082F0001AEA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33693926B3082F0001AEA9 /* AppDelegate.swift */; };
 		EE33693C26B3082F0001AEA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33693B26B3082F0001AEA9 /* SceneDelegate.swift */; };
 		EE33694626B308300001AEA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE33694426B308300001AEA9 /* LaunchScreen.storyboard */; };
 		EE33695126B308310001AEA9 /* PGImageGalleryInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33695026B308310001AEA9 /* PGImageGalleryInteractorTests.swift */; };
 		EE33695C26B308310001AEA9 /* PhotoGalleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33695B26B308310001AEA9 /* PhotoGalleryUITests.swift */; };
-		EE33696C26B3179A0001AEA9 /* APIrotocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33696B26B3179A0001AEA9 /* APIrotocols.swift */; };
-		EE33696E26B317DD0001AEA9 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33696D26B317DD0001AEA9 /* APIEndpoint.swift */; };
-		EE33697026B318660001AEA9 /* APICore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33696F26B318660001AEA9 /* APICore.swift */; };
-		EE33697226B319F10001AEA9 /* ModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33697126B319F10001AEA9 /* ModelOutput.swift */; };
-		EE41618E26BB13260010110A /* PGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41618D26BB13260010110A /* PGTextField.swift */; };
-		EE41619026BB15860010110A /* PGConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41618F26BB15860010110A /* PGConstants.swift */; };
 		EE41619326BB50C50010110A /* PGImageGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41619226BB50C50010110A /* PGImageGalleryViewController.swift */; };
 		EE41619626BB53E80010110A /* PGImageGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41619526BB53E80010110A /* PGImageGalleryCollectionViewCell.swift */; };
-		EE41619D26BB68390010110A /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41619C26BB68390010110A /* UIImageViewExtensions.swift */; };
 		EE41619F26BB6B240010110A /* PGImageGalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41619E26BB6B240010110A /* PGImageGalleryPresenter.swift */; };
 		EE4161A126BB6CF60010110A /* PGImageGalleryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4161A026BB6CF60010110A /* PGImageGalleryInteractor.swift */; };
 		EE4161A326BC03C00010110A /* PGImageGalleryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4161A226BC03C00010110A /* PGImageGalleryProtocols.swift */; };
-		EE4161A926BC06FE0010110A /* PGLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4161A826BC06FE0010110A /* PGLoader.swift */; };
 		EE4161AB26BC0F8B0010110A /* PGImageGalleryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4161AA26BC0F8B0010110A /* PGImageGalleryRouter.swift */; };
+		EE5D38AD2704A9B0003D9D91 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = EE5D38AC2704A9B0003D9D91 /* Modules */; };
 		EE88A9DE26BC3ED700A89297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE88A9DD26BC3ED700A89297 /* Assets.xcassets */; };
 		EE88A9E026BC6E3200A89297 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EE88A9DF26BC6E3200A89297 /* README.md */; };
 		EE88A9E226BC7C1100A89297 /* github-actions-demo.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE88A9E126BC7C1100A89297 /* github-actions-demo.yml */; };
@@ -56,10 +45,6 @@
 
 /* Begin PBXFileReference section */
 		EE04877026B8B0920044AC11 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		EE04877226B8B0A20044AC11 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		EE04877A26BABA7C0044AC11 /* PGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGButton.swift; sourceTree = "<group>"; };
-		EE04877C26BABCF10044AC11 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
-		EE04877F26BABD290044AC11 /* PGColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGColor.swift; sourceTree = "<group>"; };
 		EE33693626B3082F0001AEA9 /* PhotoGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE33693926B3082F0001AEA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE33693B26B3082F0001AEA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,20 +56,13 @@
 		EE33695726B308310001AEA9 /* PhotoGalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoGalleryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE33695B26B308310001AEA9 /* PhotoGalleryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryUITests.swift; sourceTree = "<group>"; };
 		EE33695D26B308310001AEA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE33696B26B3179A0001AEA9 /* APIrotocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIrotocols.swift; sourceTree = "<group>"; };
-		EE33696D26B317DD0001AEA9 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
-		EE33696F26B318660001AEA9 /* APICore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICore.swift; sourceTree = "<group>"; };
-		EE33697126B319F10001AEA9 /* ModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOutput.swift; sourceTree = "<group>"; };
-		EE41618D26BB13260010110A /* PGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGTextField.swift; sourceTree = "<group>"; };
-		EE41618F26BB15860010110A /* PGConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGConstants.swift; sourceTree = "<group>"; };
 		EE41619226BB50C50010110A /* PGImageGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageGalleryViewController.swift; sourceTree = "<group>"; };
 		EE41619526BB53E80010110A /* PGImageGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
-		EE41619C26BB68390010110A /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		EE41619E26BB6B240010110A /* PGImageGalleryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageGalleryPresenter.swift; sourceTree = "<group>"; };
 		EE4161A026BB6CF60010110A /* PGImageGalleryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageGalleryInteractor.swift; sourceTree = "<group>"; };
 		EE4161A226BC03C00010110A /* PGImageGalleryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageGalleryProtocols.swift; sourceTree = "<group>"; };
-		EE4161A826BC06FE0010110A /* PGLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGLoader.swift; sourceTree = "<group>"; };
 		EE4161AA26BC0F8B0010110A /* PGImageGalleryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageGalleryRouter.swift; sourceTree = "<group>"; };
+		EE5D38AA2704A830003D9D91 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
 		EE88A9DD26BC3ED700A89297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE88A9DF26BC6E3200A89297 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EE88A9E126BC7C1100A89297 /* github-actions-demo.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = "github-actions-demo.yml"; path = ".github/workflows/github-actions-demo.yml"; sourceTree = "<group>"; };
@@ -96,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5D38AD2704A9B0003D9D91 /* Modules in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,9 +107,6 @@
 		EE04876F26B8B07C0044AC11 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				EE04877226B8B0A20044AC11 /* StringExtensions.swift */,
-				EE04877C26BABCF10044AC11 /* UIColorExtensions.swift */,
-				EE41619C26BB68390010110A /* UIImageViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -146,40 +122,21 @@
 		EE04877826BABA590044AC11 /* Design System */ = {
 			isa = PBXGroup;
 			children = (
-				EE4161A726BC06EE0010110A /* Loader */,
-				EE41618C26BB13120010110A /* Text Field */,
-				EE04877E26BABD110044AC11 /* Tokens */,
-				EE04877926BABA610044AC11 /* Button */,
 			);
 			path = "Design System";
-			sourceTree = "<group>";
-		};
-		EE04877926BABA610044AC11 /* Button */ = {
-			isa = PBXGroup;
-			children = (
-				EE04877A26BABA7C0044AC11 /* PGButton.swift */,
-			);
-			path = Button;
-			sourceTree = "<group>";
-		};
-		EE04877E26BABD110044AC11 /* Tokens */ = {
-			isa = PBXGroup;
-			children = (
-				EE04877F26BABD290044AC11 /* PGColor.swift */,
-				EE41618F26BB15860010110A /* PGConstants.swift */,
-			);
-			path = Tokens;
 			sourceTree = "<group>";
 		};
 		EE33692D26B3082E0001AEA9 = {
 			isa = PBXGroup;
 			children = (
+				EE5D38AA2704A830003D9D91 /* Modules */,
 				EE88A9E126BC7C1100A89297 /* github-actions-demo.yml */,
 				EE88A9DF26BC6E3200A89297 /* README.md */,
 				EE33693826B3082F0001AEA9 /* PhotoGallery */,
 				EE33694F26B308310001AEA9 /* PhotoGalleryTests */,
 				EE33695A26B308310001AEA9 /* PhotoGalleryUITests */,
 				EE33693726B3082F0001AEA9 /* Products */,
+				EE5D38AB2704A9B0003D9D91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,7 +157,6 @@
 				EE04877426BAB9110044AC11 /* Features */,
 				EE04876F26B8B07C0044AC11 /* Extensions */,
 				EE04876E26B8B0670044AC11 /* Resources */,
-				EE33696A26B317890001AEA9 /* API */,
 				EE33693926B3082F0001AEA9 /* AppDelegate.swift */,
 				EE33693B26B3082F0001AEA9 /* SceneDelegate.swift */,
 				EE33694426B308300001AEA9 /* LaunchScreen.storyboard */,
@@ -228,25 +184,6 @@
 			path = PhotoGalleryUITests;
 			sourceTree = "<group>";
 		};
-		EE33696A26B317890001AEA9 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				EE33696B26B3179A0001AEA9 /* APIrotocols.swift */,
-				EE33696D26B317DD0001AEA9 /* APIEndpoint.swift */,
-				EE33696F26B318660001AEA9 /* APICore.swift */,
-				EE33697126B319F10001AEA9 /* ModelOutput.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		EE41618C26BB13120010110A /* Text Field */ = {
-			isa = PBXGroup;
-			children = (
-				EE41618D26BB13260010110A /* PGTextField.swift */,
-			);
-			path = "Text Field";
-			sourceTree = "<group>";
-		};
 		EE41619126BB507D0010110A /* Image Gallery */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,12 +205,11 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		EE4161A726BC06EE0010110A /* Loader */ = {
+		EE5D38AB2704A9B0003D9D91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EE4161A826BC06FE0010110A /* PGLoader.swift */,
 			);
-			path = Loader;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +229,7 @@
 			);
 			name = PhotoGallery;
 			packageProductDependencies = (
+				EE5D38AC2704A9B0003D9D91 /* Modules */,
 			);
 			productName = PhotoGallery;
 			productReference = EE33693626B3082F0001AEA9 /* PhotoGallery.app */;
@@ -412,26 +349,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE04877326B8B0A20044AC11 /* StringExtensions.swift in Sources */,
-				EE41618E26BB13260010110A /* PGTextField.swift in Sources */,
-				EE4161A926BC06FE0010110A /* PGLoader.swift in Sources */,
 				EE41619326BB50C50010110A /* PGImageGalleryViewController.swift in Sources */,
 				EE41619F26BB6B240010110A /* PGImageGalleryPresenter.swift in Sources */,
 				EE4161A126BB6CF60010110A /* PGImageGalleryInteractor.swift in Sources */,
 				EE41619626BB53E80010110A /* PGImageGalleryCollectionViewCell.swift in Sources */,
-				EE41619D26BB68390010110A /* UIImageViewExtensions.swift in Sources */,
-				EE33697026B318660001AEA9 /* APICore.swift in Sources */,
 				EE33693A26B3082F0001AEA9 /* AppDelegate.swift in Sources */,
-				EE33697226B319F10001AEA9 /* ModelOutput.swift in Sources */,
-				EE04877D26BABCF10044AC11 /* UIColorExtensions.swift in Sources */,
 				EE4161AB26BC0F8B0010110A /* PGImageGalleryRouter.swift in Sources */,
 				EE4161A326BC03C00010110A /* PGImageGalleryProtocols.swift in Sources */,
-				EE41619026BB15860010110A /* PGConstants.swift in Sources */,
 				EE33693C26B3082F0001AEA9 /* SceneDelegate.swift in Sources */,
-				EE33696C26B3179A0001AEA9 /* APIrotocols.swift in Sources */,
-				EE04877B26BABA7C0044AC11 /* PGButton.swift in Sources */,
-				EE04878026BABD290044AC11 /* PGColor.swift in Sources */,
-				EE33696E26B317DD0001AEA9 /* APIEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,6 +682,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE5D38AC2704A9B0003D9D91 /* Modules */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Modules;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE33692E26B3082E0001AEA9 /* Project object */;
 }

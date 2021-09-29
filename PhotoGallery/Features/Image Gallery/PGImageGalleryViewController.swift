@@ -6,18 +6,19 @@
 //
 
 import UIKit
+import PGDesign
 
-final class PGImageGalleryViewController: UIViewController {
+final class PGImageGalleryViewController: SearchViewContrller {
     
     private let collectionViewContainer = UIView()
     private var datasource: [String] = []
     private var collectionView: UICollectionView?
     private let presenter: PGImageGalleryPresenter
-    let searchController = UISearchController(searchResultsController: nil)
+    
     
     init(presenter: PGImageGalleryPresenter) {
         self.presenter = presenter
-        super.init(nibName: nil, bundle: nil)
+        super.init()
     }
     
     @available(*, unavailable)
@@ -26,30 +27,14 @@ final class PGImageGalleryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        navigationController?
-            .navigationBar
-            .isTranslucent = false
-        navigationController?
-            .navigationBar
-            .topItem?
-            .backBarButtonItem = UIBarButtonItem(
-                title: "",
-                style: .plain,
-                target: nil,
-                action: nil
-            )
         
         setupCollectionView()
         presenter.setViewModel(self)
-        setupSearchField()
-    }
-    
-    private func setupSearchField() {
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.delegate = self
-        self.navigationItem.hidesSearchBarWhenScrolling = false
-        self.navigationItem.searchController = searchController
-        self.definesPresentationContext = true
+        
+        searchBarButtonAction = { [presenter] searchBar in
+            guard let text = searchBar.searchTextField.text else { return }
+            presenter.searchForTag(tags: text)
+        }
     }
     
     private func setupCollectionView() {
@@ -87,8 +72,6 @@ final class PGImageGalleryViewController: UIViewController {
         collectionView.reloadData()
         
         self.collectionView = collectionView
-        
-        
     }
 }
 
@@ -130,22 +113,14 @@ extension PGImageGalleryViewController: PGImageGalleryViewModel {
     
     func showLoader() {
         PGLoader.shared.showSpinner()
-        searchController.searchBar.searchTextField.isUserInteractionEnabled = false
+        disableSearchField()
     }
     func hideLoader() {
-        searchController.searchBar.searchTextField.isUserInteractionEnabled = true
         PGLoader.shared.removeSpinner()
+        enableSearchField()
     }
     
     func clearDataSource() {
         datasource.removeAll()
-    }
-    
-}
-
-extension PGImageGalleryViewController: UISearchBarDelegate {
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        guard let text = searchBar.searchTextField.text else { return }
-        presenter.searchForTag(tags: text)
     }
 }

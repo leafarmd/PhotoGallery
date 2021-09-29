@@ -6,6 +6,7 @@
 //
 
 import  UIKit
+import PGCore
 
 protocol PGImageGalleryViewModel: AnyObject {
     func setTitle(_ text: String)
