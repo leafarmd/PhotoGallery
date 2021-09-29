@@ -4,6 +4,7 @@
 //
 //  Created by Rafael Mendes Damasceno on 04/08/21.
 //
+import PGCore
 
 final class PGImageGalleryInteractor: PGImageGalleryInteractorInput {
     var output: PGImageGalleryInteractorOutput?

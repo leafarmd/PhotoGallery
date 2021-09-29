@@ -7,9 +7,9 @@
 
 import UIKit
 
-final class PGTextField: UITextField {
+public final class PGTextField: UITextField {
     
-    override func didMoveToSuperview() {
+    public override func didMoveToSuperview() {
         guard let superview = superview else { return }
         
         backgroundColor = PGColor.white64.uiColor

@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class PGButton: UIButton {
+public final class PGButton: UIButton {
     
-    var touchAction: (() -> Void)?
+    public var touchAction: (() -> Void)?
     
-    override func didMoveToSuperview() {
+    public override func didMoveToSuperview() {
         
         guard let superview  = superview else { return }
         

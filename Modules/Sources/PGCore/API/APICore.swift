@@ -8,11 +8,13 @@
 import Foundation
 import UIKit
 
-final class APICore: APIProtocols {
+public final class APICore: APIProtocols {
     
     let apiKey = "f9cc014fa76b098f9e82f1c288379ea1"
     
-    func requestObject<T>(from endpoint: APIEndpoint,
+    public init() { }
+    
+    public func requestObject<T>(from endpoint: APIEndpoint,
                                  data: Data? = nil,
                                  type: T.Type,
                                  completion: @escaping CompletionCallback<T>) where T : Decodable {
@@ -88,7 +90,7 @@ final class APICore: APIProtocols {
         }.resume()
     }
     
-    func loadImage(from endpoint: APIEndpoint, completion: @escaping RequestImageResult) {
+    public func loadImage(from endpoint: APIEndpoint, completion: @escaping RequestImageResult) {
         
         guard let url = URL(string: endpoint.url) else {
             completion(.failure(.invalidData))
@@ -109,18 +111,18 @@ final class APICore: APIProtocols {
     }
 }
 
-final class APIStub: APIProtocols {
+public final class APIStub: APIProtocols {
     
     let status: CompletionStatus<Decodable>
-    var url: String?
-    var method: HttpMethod?
-    var params: [String: String]?
+    public var url: String?
+    public var method: HttpMethod?
+    public var params: [String: String]?
     
-    init(status: CompletionStatus<Decodable>) {
+    public init(status: CompletionStatus<Decodable>) {
         self.status = status
     }
     
-    func requestObject<T>(from endpoint: APIEndpoint, data: Data?, type: T.Type, completion: @escaping CompletionCallback<T>) where T : Decodable {
+    public func requestObject<T>(from endpoint: APIEndpoint, data: Data?, type: T.Type, completion: @escaping CompletionCallback<T>) where T : Decodable {
         
         url = endpoint.url
         method = endpoint.method
@@ -134,7 +136,7 @@ final class APIStub: APIProtocols {
                 }
     }
     
-    func loadImage(from endpoint: APIEndpoint, completion: @escaping RequestImageResult) {
+    public func loadImage(from endpoint: APIEndpoint, completion: @escaping RequestImageResult) {
         url = endpoint.url
         
         switch status {

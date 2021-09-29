@@ -6,6 +6,8 @@
 //
 
 import XCTest
+import PGCore
+
 @testable import PhotoGallery
 
 class PGImageGalleryPresenterTests: XCTestCase {

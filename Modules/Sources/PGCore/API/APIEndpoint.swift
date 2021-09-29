@@ -7,12 +7,12 @@
 
 import Foundation
 
-enum APIEndpoint {
+public enum APIEndpoint {
     case photos(tags: String, page: Int)
     case image(id: String)
 }
 
-extension APIEndpoint {
+public extension APIEndpoint {
     
     private var baseUrl: String { "https://api.flickr.com/services/rest/" }
     private var baseImgUrl: String { "https://farm6.staticflickr.com/5800/" }
