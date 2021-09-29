@@ -19,7 +19,7 @@
 		EE4161A126BB6CF60010110A /* PGImageGalleryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4161A026BB6CF60010110A /* PGImageGalleryInteractor.swift */; };
 		EE4161A326BC03C00010110A /* PGImageGalleryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4161A226BC03C00010110A /* PGImageGalleryProtocols.swift */; };
 		EE4161AB26BC0F8B0010110A /* PGImageGalleryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4161AA26BC0F8B0010110A /* PGImageGalleryRouter.swift */; };
-		EE5D38AD2704A9B0003D9D91 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = EE5D38AC2704A9B0003D9D91 /* Modules */; };
+		EE4300A82704DC1C006B34C1 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = EE4300A72704DC1C006B34C1 /* Modules */; };
 		EE88A9DE26BC3ED700A89297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE88A9DD26BC3ED700A89297 /* Assets.xcassets */; };
 		EE88A9E026BC6E3200A89297 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EE88A9DF26BC6E3200A89297 /* README.md */; };
 		EE88A9E226BC7C1100A89297 /* github-actions-demo.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE88A9E126BC7C1100A89297 /* github-actions-demo.yml */; };
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE5D38AD2704A9B0003D9D91 /* Modules in Frameworks */,
+				EE4300A82704DC1C006B34C1 /* Modules in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,13 +102,6 @@
 				EE04877026B8B0920044AC11 /* Localizable.strings */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		EE04876F26B8B07C0044AC11 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		EE04877426BAB9110044AC11 /* Features */ = {
@@ -155,7 +148,6 @@
 			children = (
 				EE04877826BABA590044AC11 /* Design System */,
 				EE04877426BAB9110044AC11 /* Features */,
-				EE04876F26B8B07C0044AC11 /* Extensions */,
 				EE04876E26B8B0670044AC11 /* Resources */,
 				EE33693926B3082F0001AEA9 /* AppDelegate.swift */,
 				EE33693B26B3082F0001AEA9 /* SceneDelegate.swift */,
@@ -229,7 +221,7 @@
 			);
 			name = PhotoGallery;
 			packageProductDependencies = (
-				EE5D38AC2704A9B0003D9D91 /* Modules */,
+				EE4300A72704DC1C006B34C1 /* Modules */,
 			);
 			productName = PhotoGallery;
 			productReference = EE33693626B3082F0001AEA9 /* PhotoGallery.app */;
@@ -684,7 +676,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EE5D38AC2704A9B0003D9D91 /* Modules */ = {
+		EE4300A72704DC1C006B34C1 /* Modules */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Modules;
 		};

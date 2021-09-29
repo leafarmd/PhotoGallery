@@ -16,7 +16,7 @@ public final class ImageLoader {
 }
 
 public extension UIImageView {
-    public func downloadImageFromUrl(_ endpoint: APIEndpoint, defaultImage: UIImage? = nil) {
+    func downloadImageFromUrl(_ endpoint: APIEndpoint, defaultImage: UIImage? = nil) {
         
         if let cachedImage = ImageLoader.shared.cache.object(forKey: endpoint.url as NSString) {
             self.image = cachedImage
