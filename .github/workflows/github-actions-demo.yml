@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: |
-    xcodebuild clean test -project "PhotoGallery.xcodeproj" -scheme "PhotoGallery" -destination "platform=iOS Simulator,name=iPhone 12,OS=14.4"swift test --enable-test-discovery --enable-code-coverage
+    xcodebuild clean test -project "PhotoGallery.xcodeproj" -scheme "PhotoGallery" -destination "platform=iOS Simulator,name=iPhone 12,OS=14.4" --enable-test-discovery --enable-code-coverage
     - uses: mattpolzin/swift-codecov-action@0.6.0
       with:
         MINIMUM_COVERAGE: 98
