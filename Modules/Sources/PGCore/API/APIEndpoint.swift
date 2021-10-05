@@ -23,7 +23,6 @@ public extension APIEndpoint {
         }
     }
     
-    
     var params: [String: String] {
         switch self {
         case .photos(let tags, let page):

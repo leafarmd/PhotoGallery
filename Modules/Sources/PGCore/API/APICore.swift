@@ -7,10 +7,10 @@ public final class APICore: APIProtocols {
     
     public init() { }
     
-    public func requestObject<T>(from endpoint: APIEndpoint,
+    public func requestObject<T: Decodable>(from endpoint: APIEndpoint,
                                  data: Data? = nil,
                                  type: T.Type,
-                                 completion: @escaping CompletionCallback<T>) where T : Decodable {
+                                 completion: @escaping CompletionCallback<T>) {
         
         request(from: endpoint.url,
                 type: type,
@@ -18,7 +18,6 @@ public final class APICore: APIProtocols {
                 params: endpoint.params,
                 data: data,
                 completion: completion)
-        
     }
     
     private func request<T: Decodable>(from endpoint: String,
@@ -27,9 +26,6 @@ public final class APICore: APIProtocols {
                                               params: [String: String],
                                               data: Data?,
                                               completion: @escaping CompletionCallback<T>) {
-        
-        let configuration = URLSessionConfiguration.default
-        let session = URLSession(configuration: configuration)
         
         var baseURL = URLComponents(string: endpoint)
         
@@ -57,7 +53,7 @@ public final class APICore: APIProtocols {
             request.httpBody = data
         }
         
-        
+        let session = URLSession(configuration: .default)
         session.dataTask(with: request) { data, response, error in
             DispatchQueue.main.async {
                 
@@ -139,6 +135,4 @@ public final class APIStub: APIProtocols {
                     completion(.failure(failure))
                 }
     }
-    
-    
 }

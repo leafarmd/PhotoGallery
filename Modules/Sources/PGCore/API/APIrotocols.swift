@@ -36,6 +36,5 @@ public enum HttpMethod: String {
     case GET
 }
 
-public typealias RequestResult<T> = Result<T, RequestError>
 public typealias RequestImageResult = (Result<UIImage, RequestError>) -> Void
 public typealias CompletionCallback<T: Decodable> = (CompletionStatus<T>) -> Void
