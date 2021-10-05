@@ -1,10 +1,3 @@
-//
-//  APIEndpoint.swift
-//  PhotoGallery
-//
-//  Created by Rafael Mendes Damasceno on 29/07/21.
-//
-
 import Foundation
 
 public enum APIEndpoint {

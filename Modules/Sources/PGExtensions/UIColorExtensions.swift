@@ -1,10 +1,3 @@
-//
-//  UIColorExtensions.swift
-//  PhotoGallery
-//
-//  Created by Rafael Mendes Damasceno on 04/08/21.
-//
-
 import UIKit
 
 public extension UIColor {

@@ -1,10 +1,3 @@
-//
-//  Output.swift
-//  PhotoGallery
-//
-//  Created by Rafael Mendes Damasceno on 29/07/21.
-//
-
 import Foundation
 
 // MARK: - SizesOutput
