@@ -1,11 +1,6 @@
 import Foundation
 import UIKit
 
-public protocol APIProtocols: AnyObject {
-    func requestObject<T: Decodable>(from endpoint: APIEndpoint, data: Data?, type: T.Type, completion: @escaping CompletionCallback<T>)
-    func loadImage(from endpoint: APIEndpoint, completion: @escaping RequestImageResult)
-}
-
 public enum CompletionStatus<T> {
     case success(T)
     case failure(RequestError)
