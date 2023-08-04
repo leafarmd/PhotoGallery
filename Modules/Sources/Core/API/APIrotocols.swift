@@ -13,11 +13,6 @@ public protocol APIProtocols: AnyObject {
     func loadImage(from endpoint: APIEndpoint, completion: @escaping RequestImageResult)
 }
 
-public enum CompletionStatus<T> {
-    case success(T)
-    case failure(RequestError)
-}
-
 public enum RequestError: Error {
     case malformedURL
     case requestFailed
@@ -43,6 +38,5 @@ public enum HttpMethod: String {
     case GET
 }
 
-public typealias RequestResult<T> = Result<T, RequestError>
 public typealias RequestImageResult = (Result<UIImage, RequestError>) -> Void
-public typealias CompletionCallback<T: Decodable> = (CompletionStatus<T>) -> Void
+public typealias CompletionCallback<T: Decodable> = (Result<T, RequestError>) -> Void

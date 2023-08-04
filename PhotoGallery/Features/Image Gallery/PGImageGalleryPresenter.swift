@@ -5,8 +5,8 @@
 //  Created by Rafael Mendes Damasceno on 04/08/21.
 //
 
-import PGCore
-import PGExtensions
+import Core
+import Extensions
 
 final class PGImageGalleryPresenter {
     

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import PGCore
+import Core
 
 public final class ImageLoader {
     private init() { }

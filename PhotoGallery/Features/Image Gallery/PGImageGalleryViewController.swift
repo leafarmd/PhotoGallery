@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import PGDesign
+import Design
 
 final class PGImageGalleryViewController: SearchViewContrller {
     

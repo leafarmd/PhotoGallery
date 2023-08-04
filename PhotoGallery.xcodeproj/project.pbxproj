@@ -112,13 +112,6 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
-		EE04877826BABA590044AC11 /* Design System */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Design System";
-			sourceTree = "<group>";
-		};
 		EE33692D26B3082E0001AEA9 = {
 			isa = PBXGroup;
 			children = (
@@ -146,7 +139,6 @@
 		EE33693826B3082F0001AEA9 /* PhotoGallery */ = {
 			isa = PBXGroup;
 			children = (
-				EE04877826BABA590044AC11 /* Design System */,
 				EE04877426BAB9110044AC11 /* Features */,
 				EE04876E26B8B0670044AC11 /* Resources */,
 				EE33693926B3082F0001AEA9 /* AppDelegate.swift */,

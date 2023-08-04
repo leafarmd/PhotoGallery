@@ -5,8 +5,8 @@
 //  Created by Rafael Mendes Damasceno on 05/08/21.
 //
 
-import  UIKit
-import PGCore
+import UIKit
+import Core
 
 protocol PGImageGalleryViewModel: AnyObject {
     func setTitle(_ text: String)

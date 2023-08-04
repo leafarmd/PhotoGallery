@@ -10,7 +10,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "Modules",
-            targets: ["PGCore", "PGDesign", "PGExtensions"]),
+            targets: ["Core", "Design", "Extensions"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,19 +20,19 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "PGCore",
+            name: "Core",
             dependencies: []),
         .testTarget(
-            name: "PGCoreTests",
-            dependencies: ["PGCore"]),
+            name: "CoreTests",
+            dependencies: ["Core"]),
         .target(
-            name: "PGDesign",
+            name: "Design",
             dependencies: []),
         .target(
-            name: "PGExtensions",
-            dependencies: ["PGCore"]),
+            name: "Extensions",
+            dependencies: ["Core"]),
         .testTarget(
-            name: "PGExtensionsTests",
-            dependencies: ["PGCore"]),
+            name: "ExtensionsTests",
+            dependencies: ["Core", "Extensions"]),
     ]
 )

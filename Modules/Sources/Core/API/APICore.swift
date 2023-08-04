@@ -113,12 +113,12 @@ public final class APICore: APIProtocols {
 
 public final class APIStub: APIProtocols {
     
-    let status: CompletionStatus<Decodable>
+    let status: Result<Decodable, RequestError>
     public var url: String?
     public var method: HttpMethod?
     public var params: [String: String]?
     
-    public init(status: CompletionStatus<Decodable>) {
+    public init(status: Result<Decodable, RequestError>) {
         self.status = status
     }
     

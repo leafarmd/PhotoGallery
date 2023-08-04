@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import PGExtensions
+import Extensions
 
 final class PGImageGalleryCollectionViewCell: UICollectionViewCell {
     
